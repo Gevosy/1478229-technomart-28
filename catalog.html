@@ -2,50 +2,63 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
     <header>
+    <!--Верхнее меню-->
         <div class="top-menu">
-            <a><img src="img/logo.jpg" width="90" height="90" alt="Логотип компании"></a>
-            <!-- иконка --><input type="search" name="q" placeholder="Поиск">
-            <a href="">Закладки: 0</a>
-            <a href="">Корзина: 10</a>
-            <a href="">Оформить заказ</a>
+            <a class="logo" href="index.html">
+                <img src="img/logo.jpg" width="90" height="90" alt="Логотип компании">
+            </a>
+            <p class="search">Тут будет форма поиска</p>
+            <a class="favorites" href="#">Закладки: 0</a>
+            <a class="cart" href="#">Корзина: 10</a>
+            <a class="buy-order" href="#">Оформить заказ</a>
         </div>
       <!-- Информация (слоган, телефон, адрес и вход/рег)-->
       <p class="slogan">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         <div class="info">
-          <p class="telefon">+7(812)555-05-55</p>
+          <a href="tel:+78125550555">+7(812)555-05-55</a>
           <p class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
         </div>
+    <!--Блок клиента-->
       <div class="account"> 
-          <p class="name">Равшан Джамшутович</p>
-          <a href="">Мои заказы</a>
-          <a href="">Личный кабинет</a>
+          <ul class="block-client">
+              <li><a class="name-client" href="#">Равшан Джамшутович</a></li>
+              <li><a class="go-out" href="#">Выйти</a></li>
+          </ul>
+        <a class="my-order" href="#">Мои заказы</a>
+        <a class="personal-cabinet" href="#">Личный кабинет</a>
       </div>
       <!-- Навигационное меню -->
         <nav class="main-menu">
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="">Новости</a></li>
-            <li><a href="">Спецпредложения</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a>Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
       </nav>
     </header>
-    <main class="conteiner">
+
+    <main class="container">
+        <!-- Хлебные крошки -->
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="">Инструмент</a></li>
+            <li><a href="#">Инструмент</a></li>
             <li><a href="catalog.html">Перфораторы</a></li>
         </ul>
         <h1>Перфораторы</h1>
         <!-- Фильтр товаров -->
+        <!-- 
+            Фильтр использует форму. Заменю позже.
+
         <section class="manufac">
         <h3>Производители:</h3>
             <ul>
@@ -65,12 +78,12 @@
             </ul>
             </section>
             <button type="button">Показать</button>
-
+        -->
         <!-- Список товаров -->
 
         <ul>
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-1.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000"></p>
                     <h3>Перфоратор BOSCH BFG 3000</h3>
                 </a>
@@ -79,7 +92,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-2.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000"></p>
                     <h3>Перфоратор BOSCH BFG 6000</h3>
                 </a>
@@ -88,18 +101,18 @@
             </li>
 
             <li>   
-                <span class="news">new</span> <!-- Кнопки не могут находиться в ссылке, выдвинул вверх -->
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <span class="news">new</span>
+                <a class="buy">Купить</a>
+                <a class="favorites">В закладки</a>
 
-                <a href="">
+                <a href="#">
                     <h3>Перфоратор BOSCH BFG 2000</h3>
                 </a>
                 <p>12500 Р.</p>
             </li>
 
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-1.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000"></p>
                     <h3>Перфоратор BOSCH BFG 3000</h3>
                 </a>
@@ -108,7 +121,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-2.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000"></p>
                     <h3>Перфоратор BOSCH BFG 6000</h3>
                 </a>
@@ -117,7 +130,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-3.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000"></p>
                     <h3>Перфоратор BOSCH BFG 2000</h3>
                 </a>
@@ -125,7 +138,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-1.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000"></p>
                     <h3>Перфоратор BOSCH BFG 3000</h3>
                 </a>
@@ -134,7 +147,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-2.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000"></p>
                     <h3>Перфоратор BOSCH BFG 6000</h3>
                 </a>
@@ -143,7 +156,7 @@
             </li>
 
             <li>
-                <a href="">
+                <a href="#">
                     <p><img src="product-3.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000"></p>
                     <h3>Перфоратор BOSCH BFG 2000</h3>
                 </a>
@@ -152,30 +165,40 @@
         </ul> 
     </main>
     <footer>
-      <a><img src="img/logo.jpg" width="50" height="50" alt="Логотип компании"></a>
-      <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
-      <ul class="onemenu">
-        <li><a href="">Компания</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="">Каталог</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <ul class="twomenu">
-        <li><a href="">Материалы</a></li>
-        <li><a href="">Техника</a></li>
-        <li><a href="">Инструмент</a></li>
-        <li><a href="">Спецпредложения</a></li>
-      </ul>
+      <a class="footer-logo" href="index.html"> <!-- ТЗ лого ссылается на главную страницу-->
+          <img src="img/logo.jpg" width="50" height="50" alt="Логотип компании">
+      </a>
+      <!-- Информация в подвале -->
+      <div class="footer-info">
+        <p class="fadress">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+        <a href="tel:+78125550555">+7(812)555-05-55</a>
+      </div>
+      <!-- Нижнее двойное меню. Обернул div как отдельный блок футера. -->
+      <div class="footer-menu">
+        <ul class="fmenu-one">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a>Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="fmenu-two">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <!-- Нижний подвал, для акцента фона -->
       <div class="footer-bottom">
-        <p>&#169;2010-2017 Компания Техномарт Все права защищены</p>
-        
-        <a href=""><img src="vk.svg" width="0" height="0" alt="ВКонтакте"></a>
-        <a href=""><img src="fb.svg" width="0" height="0" alt="Facebook"></a>
-        <a href=""><img src="instagram.svg" width="0" height="0" alt="instagram"></a>
-
-        <p>Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
-        <p>Разработано - <a href="https://htmlacademy.ru"> htmlacademy.ru</a></p>
+        <p>&#169; 2010-2017 Компания «Техномарт» Все права защищены</p>
+        <ul class="icon-social">
+            <li><a href="#"><img src="vk.svg" width="0" height="0" alt="ВКонтакте"></a></li>
+            <li><a href="#"><img src="fb.svg" width="0" height="0" alt="Facebook"></a></li>
+            <li><a href="#"><img src="instagram.svg" width="0" height="0" alt="instagram"></a></li>
+        </ul>
+        <p>Обратная связь: <a href="mailto:htmlacademy@mail.ru">htmlacademy@mail.ru</a></p>
+        <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </footer>
   </body>
