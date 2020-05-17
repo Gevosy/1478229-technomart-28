@@ -13,13 +13,15 @@
           <a class="logo" href="index.html">
             <img src="img/logo.jpg" width="90" height="90" alt="Логотип компании">
           </a>
-          <p class="search">Тут будет форма поиска</p>
+          <form>
+            <input type="search" placeholder="Поиск:">
+          </form>
           <a class="favorites" href="#">Закладки: 0</a>
           <a class="cart" href="#">Корзина: 10</a>
           <a class="buy-order" href="#">Оформить заказ</a>
       </div>
     <!-- Информация (слоган, телефон, адрес и вход/рег)-->
-      <p class="slogan">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+      <i class="slogan">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</i>
         <div class="info">
           <a class="main-phone" href="tel:+78125550555">+7(812)555-05-55</a>
           <p class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
@@ -43,7 +45,167 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
+      <!-- Слайдер и блоки предложений -->
+      <div class="block-information">
+        <section class="material-product">
+          <h2>Материалы</h2>
+          <a href="#">На любой вкус</a>
+          <img src="icon.svg" width="20" height="20" alt="">
+        </section>
+
+        <section class="instruments">
+          <h2>Инструменты</h2>
+          <a class="inst" href="#">На все случаи</a>
+          <img src="icon.svg" width="20" height="20" alt="">
+        </section>
+
+        <section class="technic">
+          <h2>Техника</h2>
+          <a class="tec" href="#">Для стройки</a>
+          <img src="icon.svg" width="20" height="20" alt="">
+        </section>
+
+        <section class="sale">
+          <h2>Скидки 50%</h2>
+          <a class="sal" href="#">На 350 товаров</a>
+          <img src="icon.svg" width="20" height="20" alt="">
+        </section>
+
+        <section class="delivery">
+          <h2>Доставка</h2>
+          <a class="deli" href="#">Бесплатно</a>
+          <img src="icon.svg" width="20" height="20" alt="">
+        </section>
+
+        <div class="block-slider"> <!-- Пока слайдер такой, но если можно сделайте оценку - правильно ли двинулся с места. -->
+          <div class="main-slider">
+            <div class="slider-1">
+              <h2>Перфораторы</h2>
+              <span>Настоящие мужские игрушки</span>
+              <img src="img/car.jpg" width="300" height="123" alt="Мужчина в руках с перфоратором, огромная игрушка">
+              <a class="catalog-slider" href="#">Открыть каталог</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Каталог популярных товаров -->
+      <section class="popular-product">
+        <!-- Создал Div для обёртки рамки в серый цвет + группировка с ссылкой на все товары.-->
+        <div class="block-popular">
+          <h2>Популярные товары:</h2>
+          <a class="all-popular" href="#">Все популярные товары</a>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <img src="product-good.html" width="225" height="165" alt="Перфоратор BOSCH BFG 9000">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <del>32500 Р.</del>
+              <p>25500 Р.</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="product-good.html" width="225" height="165" alt="Перфоратор BOSCH BFG 9000">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <del>32500 Р.</del>
+              <p>25500 Р.</p>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#">
+              <img src="product-good.html" width="225" height="165" alt="Перфоратор BOSCH BFG 9000">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <del>32500 Р.</del>
+              <p>25500 Р.</p>
+            </a>
+          </li>
+
+          <li>
+            <span class="news">new</span>
+            <a href="#">
+              <img src="product-good.html" width="225" height="165" alt="Перфоратор BOSCH BFG 9000">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <del>32500 Р.</del>
+              <p>25500 Р.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="brands">
+        <div class="block-brands">
+          <h2>Популярные производители:</h2>
+          <a class="all-company" href="#">Все производители</a>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="service">
+        <h2>Сервис</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <!-- Меню сервиса -->
+        <div class="menu-service">
+          <button type="button">Доставка</button>
+          <button type="button">Гарантия</button>
+          <button type="button">Кредит</button>
+        </div>
+        <!-- Вывод информации -->
+        <div class="info-nav">
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+          <div class="icon-service">
+            <img src="truck.svg" width="250" height="300" alt="Грузовичок">
+          </div>
+        </div>
+      </section>
+
       <section class="company">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
@@ -73,7 +235,7 @@
       <!-- Информация в подвале -->
       <div class="footer-info">
         <p class="fadress">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-        <a class="fphone"href="tel:+78125550555">+7(812)555-05-55</a>
+        <a class="fphone" href="tel:+78125550555">+7(812)555-05-55</a>
       </div>
       <!-- Нижнее двойное меню. Обернул div как отдельный блок футера. -->
       <div class="footer-menu">
