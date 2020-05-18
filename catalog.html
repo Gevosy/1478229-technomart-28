@@ -14,7 +14,8 @@
                 <img src="img/logo.jpg" width="90" height="90" alt="Логотип компании">
             </a>
             <form>
-                <input type="search" placeholder="Поиск:">
+                <input type="submit" name="go-search" value="Отправить"> <!-- Если не ошибаюсь image input должен быть-->
+                <input type="search" name="search" placeholder="Поиск:">
             </form>
             <a class="favorites" href="#">Закладки: 0</a>
             <a class="cart" href="#">Корзина: 10</a>
@@ -59,18 +60,16 @@
 
         <h1>Перфораторы</h1> <!-- Добавить в обёртку див рамка ну или класс добавить-->
         <div class="sort">
-            <p>Сортировка</p>
-
-            <p>Цена</p>
-            <p>Форма</p>
-            <p>По типу</p>
-            <p>Форма</p>
-            <p>По функционалу</p>
-            <p>Форма</p>
-            <div class="up-bt">
-                <p>Иконка</p>
-            </div>
+            <p>Сортировка:</p>
+            <a class="price-sort" href="#">Цена</a>
+            <a class="type-sort" href="#">По типу</a>
+            <a class="function-sort" href="#">По функционалу</a>
+            <ul>
+                <li class="up-ic"><a>Вверх</a></li>
+                <li class="botm-ic"><a>Вниз</a></li>
+            </ul>
         </div>
+
          <!-- Фильтр товаров -->
         <p>Фильтр</p>
         <p>Ползунок цен со значением</p>
