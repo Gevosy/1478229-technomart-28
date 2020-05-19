@@ -7,22 +7,22 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
     <!--Верхнее меню-->
       <div class="top-menu">
-          <a class="logo" href="index.html">
-            <img src="img/logo.jpg" width="90" height="90" alt="Логотип компании">
-          </a>
-          <form>
-            <input type="submit" name="go-search" value="Отправить"> <!-- Если не ошибаюсь image input должен быть-->
-            <input type="search" name="search" placeholder="Поиск:">
+        <a class="logo" href="index.html">
+          <img src="img/logo.jpg" width="90" height="90" alt="Логотип компании">
+        </a>
+        <form>
+          <input src="img/icon-search.svg" type="image" name="go-search">
+          <input type="search" name="search" placeholder="Поиск:">
         </form>
           <a class="favorites" href="#">Закладки: 0</a>
           <a class="cart" href="#">Корзина: 10</a>
           <a class="buy-order" href="#">Оформить заказ</a>
       </div>
     <!-- Информация (слоган, телефон, адрес и вход/рег)-->
-      <i class="slogan">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</i>
+      <i class="slogan">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</i>
         <div class="info">
           <a class="main-phone" href="tel:+78125550555">+7(812)555-05-55</a>
           <p class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
@@ -47,52 +47,52 @@
     </header>
 
     <main>
-      <!-- Слайдер и блоки предложений -->
+      <!-- Слайдер и секции предложений -->
       <div class="block-information">
+
         <section class="material-product">
           <h2>Материалы</h2>
-          <a href="#">На любой вкус</a>
-          <img src="icon.svg" width="20" height="20" alt="">
+          <a class="taste" href="#">На любой вкус</a>
+          <img src="icon.svg" width="44" height="65" alt="">
         </section>
 
         <section class="instruments">
           <h2>Инструменты</h2>
-          <a class="inst" href="#">На все случаи</a>
-          <img src="icon.svg" width="20" height="20" alt="">
+          <a class="live-tools" href="#">На все случаи</a>
+          <img src="icon.svg" width="75" height="61" alt="">
         </section>
 
         <section class="technic">
           <h2>Техника</h2>
-          <a class="tec" href="#">Для стройки</a>
-          <img src="icon.svg" width="20" height="20" alt="">
+          <a class="construction" href="#">Для стройки</a>
+          <img src="icon.svg" width="78" height="62" alt="">
         </section>
 
         <section class="sale">
           <h2>Скидки 50%</h2>
-          <a class="sal" href="#">На 350 товаров</a>
-          <img src="icon.svg" width="20" height="20" alt="">
+          <a class="for-products" href="#">На 350 товаров</a>
+          <img src="icon.svg" width="59" height="72" alt="">
         </section>
 
         <section class="delivery">
           <h2>Доставка</h2>
-          <a class="deli" href="#">Бесплатно</a>
-          <img src="icon.svg" width="20" height="20" alt="">
+          <a class="free-delivery" href="#">Бесплатно</a>
+          <img src="icon.svg" width="78" height="63" alt="">
         </section>
 
-        <div class="block-slider"> <!-- Пока слайдер такой, но если можно сделайте оценку - правильно ли двинулся с места. -->
-          <div class="main-slider">
-            <div class="slider-1">
-              <h2>Перфораторы</h2>
-              <span>Настоящие мужские игрушки</span>
-              <img src="img/car.jpg" width="300" height="123" alt="Мужчина в руках с перфоратором, огромная игрушка">
-              <a class="catalog-slider" href="#">Открыть каталог</a>
-            </div>
+        <!-- Слайдер -->
+        <div class="main-slider">
+          <div class="slider-1">
+            <h2 class="title-slider">Перфораторы</h2>
+            <span class="slogan-slider">Настоящие мужские игрушки</span>
+            <img src="img/slider-1.jpg" width="620" height="266" alt="Мужчина в руках с перфоратором, огромная игрушка">
+            <a class="open-catalog-slider" href="#">Открыть каталог</a>
           </div>
         </div>
       </div>
+
       <!-- Каталог популярных товаров -->
       <section class="popular-product">
-        <!-- Создал Div для обёртки рамки в серый цвет + группировка с ссылкой на все товары.-->
         <div class="block-popular">
           <h2>Популярные товары:</h2>
           <a class="all-popular" href="#">Все популярные товары</a>
@@ -100,7 +100,7 @@
         <ul>
           <li>
             <a href="#">
-              <img src="product-good1.html" width="225" height="165" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
               <h3>Перфоратор BOSCH BFG 9000</h3>
             </a>
               <del>32500 Р.</del>
@@ -108,9 +108,9 @@
           </li>
 
           <li>
-            <span class="news">new</span>
+            <span class="ico-news">new</span>
             <a href="#">
-              <img src="product-good2.html" width="225" height="165" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/bfg-3000.jpg" width="128" height="112" alt="Перфоратор BOSCH BFG 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
             </a>
               <del>22500 Р.</del>
@@ -119,7 +119,7 @@
           
           <li>
             <a href="#">
-              <img src="product-good3.html" width="225" height="165" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
             </a>
               <del>30500 Р.</del>
@@ -128,7 +128,7 @@
 
           <li>
             <a href="#">
-              <img src="product-good4.html" width="225" height="165" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/bfg-2000.jpg" width="128" height="112" alt="Перфоратор BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
             </a>
               <p>12500 Р.</p>
@@ -142,44 +142,51 @@
           <a class="all-company" href="#">Все производители</a>
         </div>
         <ul>
-          <li>
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/bosch.png" width="126" height="37" alt="Производитель Bosch">
             </a>
           </li>
-          <li>
+
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/Makita.png" width="123" height="40" alt="Производитель Bosch">
             </a>
           </li>
-          <li>
+
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/dewalt.png" width="146" height="44" alt="Производитель Bosch">
             </a>
           </li>
-          <li>
+
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/interskol.png" width="200" height="88" alt="Производитель Bosch">
             </a>
           </li>
-          <li>
+
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/hitacho.png" width="169" height="31" alt="Производитель Bosch">
             </a>
           </li>
-          <li>
+
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/lg.png" width="121" height="73" alt="Производитель Bosch">
             </a>
           </li>
-          <li>
+
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/aeg.png" width="151" height="96" alt="Производитель Bosch">
             </a>
           </li>
-          <li>
+
+          <li class="logo-brands">
             <a href="#">
-              <img src="BOSCH.jpg" width="150" height="150" alt="Производитель Bosch">
+              <img src="img/metabo.png" width="204" height="69" alt="Производитель Bosch">
             </a>
           </li>
         </ul>
@@ -221,7 +228,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p> <!-- Убрал <br> - с CSS можно-->
         <a href="#"> <!-- По ТЗ при нажатии карты, пользователя отправляет в сервис карт.-->
-          <img src="img/map.jpg" width="220" height="220" alt="Карта проезда: Большая Конюшенная ул., 19">
+          <img src="img/map.png" width="300" height="158" alt="Карта проезда: Большая Конюшенная ул., 19">
         </a>
         <a class="write-me" href="#">Забудились? Напишите нам!</a>
       </section>
