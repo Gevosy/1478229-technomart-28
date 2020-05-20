@@ -11,7 +11,7 @@
     <!--Верхнее меню-->
       <div class="top-menu">
         <a class="logo" href="index.html">
-          <img src="img/logo.jpg" width="90" height="90" alt="Логотип компании">
+          <img src="img/logo-technomart.svg" width="108" height="18" alt="Компания «Техномарт»">
         </a>
         <form>
           <input src="img/icon-search.svg" type="image" name="go-search">
@@ -43,7 +43,7 @@
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-      </nav>
+        </nav>
     </header>
 
     <main>
@@ -207,7 +207,7 @@
           <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
             Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
           <div class="icon-service">
-            <img src="truck.svg" width="250" height="300" alt="Грузовичок">
+            <!-- Фоновая картинка здесь будет-->
           </div>
         </div>
       </section>
@@ -216,10 +216,10 @@
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <ul class="delivery-company">
+          <li class="item-company">Деловые линии</li>
+          <li class="item-company">Автотрейдинг</li>
+          <li class="item-company">ЖелДорЭкспедиция</li>
         </ul>
         <a class="detailed-company" href="#">Подробнее о компании</a> <!-- С кнопкой более естественней :) -->
       </section>
@@ -235,8 +235,8 @@
     </main>
 
     <footer>
-      <a class="footer-logo" href="index.html"> <!-- ТЗ лого ссылается на главную страницу-->
-        <img src="img/logo.jpg" width="50" height="50" alt="Логотип компании"> <!-- Отдельный лого для футера -->
+      <a class="footer-logo" href="index.html">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Компания «Техномарт»">
       </a>
       <!-- Информация в подвале -->
       <div class="footer-info">
@@ -245,14 +245,14 @@
       </div>
       <!-- Нижнее двойное меню. Обернул div как отдельный блок футера. -->
       <div class="footer-menu">
-        <ul class="fmenu-one">
+        <ul class="fnav-one">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="fmenu-two">
+        <ul class="fnav-two">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
@@ -261,14 +261,16 @@
       </div>
       <!-- Нижний подвал, для акцента фона -->
       <div class="footer-bottom">
-        <p>&#169; 2010-2017 Компания «Техномарт» Все права защищены</p>
-        <ul class="icon-social">
-          <li><a href="#"><img src="vk.svg" width="0" height="0" alt="ВКонтакте"></a></li>
-          <li><a href="#"><img src="fb.svg" width="0" height="0" alt="Facebook"></a></li>
-          <li><a href="#"><img src="instagram.svg" width="0" height="0" alt="instagram"></a></li>
+        <p class="footer-copyright">&#169; 2010-2017 Компания «Техномарт» Все права защищены</p> 
+        <ul class="footer-social"> <!-- Пока такую оставлю -->
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
-        <p>Обратная связь: <a href="mailto:htmlacademy@mail.ru">htmlacademy@mail.ru</a></p>
-        <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+         <ul class="footer-contacts">
+            <li class="item-contacts">Обратная связь: <a href="mailto:htmlacademy@mail.ru">htmlacademy@mail.ru</a></li>
+            <li class="item-contacts">Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
+        </ul>
       </div>
     </footer>
   </body>
