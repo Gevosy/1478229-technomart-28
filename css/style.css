@@ -1,0 +1,423 @@
+/* Кастомные стили */
+:root {
+    --basic-verydarkblue: #293449; /* Верхнее меню + самый нижний подвал */
+    --basic-darkblue: #32425C; /* Главное меню + обычный подвал + заголовки */
+    --basic-grayblock: #f9f5f0; /* Популярные + производители блоки */
+    --basic-red: #ee3643; /* Все красные кнопки + дополнительные */ 
+    --basic-gold: #ffd180; /* Дополнительные ссылки золотые */
+    --basic-white: #ffffff;
+    --basic-darkred: #ba2732;
+}
+
+
+body {
+    font-family: "PT Sans", Arial, sans-serif;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px; /* Для всех 14 пикселей */
+}
+
+p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Cuprum", Arial, sans-serif;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hiden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect (0 0 0 0);
+    overflow: hidden;
+}
+
+.popup-map, .popup-order {
+    display: none;
+}
+
+.add-cart-popup {
+    display: none;
+}
+
+/* Верхнее меню */
+
+.top-menu {
+    background-color: var(--basic-verydarkblue);
+    width: 100%;
+}
+
+.logo { /* Логотип по фону не ровный. Padding когда делаю ровный, когда ширину и высоту то плохо все.*/
+    background-color: var(--basic-red);
+    text-align: center;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.logo:hover {background-color: var(--basic-red);}
+.logo:active {background-color: #ba2732;}
+
+.top-menu a {
+    color: var(--basic-white);
+    font-size: 18px;
+}
+
+/*Ссылки верхнего меню */
+
+.place-order {
+    background-color: #63a63e;
+    text-align: center;
+}
+
+.place-order:hover {background-color: #5fbb2d;}
+.place-order:active {
+    background-color: #63a63e;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.favorites:active, .cart:active {
+    background-color: #000000;
+}
+
+
+
+.main-header {
+    font-family: "Cuprum", Arial, sans-serif;
+    background-color: rgba(232, 232, 232, 0.41);
+}
+
+.slogan {
+    font-style: italic;
+    color: var(--basic-red);
+    font-size: 16px;
+}
+
+.main-phone {
+    font-size: 21px;
+    font-weight: bold;
+    border: 4px solid #fff;
+    color: var(--basic-red);
+}
+
+.adress {
+    font-size: 14px; 
+    color: var(--basic-verydarkblue);
+}
+
+/* Блок авторизации */
+
+.auth a {
+    color: #000000;
+    font-size: 21px;
+    background-color: var(--basic-white);
+}
+
+.sign-up:hover, .reg:hover {color: var(--basic-red);}
+.sign-up:active, .reg:active {color: #c5c5c5;}
+
+/* Авторизация - активация ссылок */
+
+.name-client:active {color: #c5c5c5;}
+
+.go-out:hover {color: #3D546F;}
+.go-out:active {color: #c5c5c5;}
+
+.my-order:hover, 
+.personal-cabinet:hover {
+    color: var(--basic-red);
+}
+
+.my-order:active, 
+.personal-cabinet:active {
+    color: #c5c5c5;
+}
+
+/* Главное меню */
+
+.main-menu {
+    background-color: var(--basic-darkblue);
+    width: 900px;
+}
+
+.main-menu a {
+    color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+    font-size: 18px;
+}
+
+.site-navigation a:hover {
+    background-color: var(--basic-verydarkblue);
+}
+
+.site-navigation a:active {
+    background-color: #1d2739;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+/* Секция о компании техномарт */
+
+.delivery-company {
+    list-style: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+.detailed-company, .write-me {
+    background-color: var(--basic-red);
+    font-size: 14px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.detailed-company:hover, 
+.write-me:hover {
+    background-color: var(--basic-red);
+}
+
+.detailed-company:active, 
+.write-me:active {
+    background-color: var(--basic-darkred);
+}
+
+
+/* Весь подвал */
+/* Подвал */
+.main-footer {
+    background-color: var(--basic-darkblue);
+    font-family: "Cuprum", Arial, sans-serif;
+}
+
+.main-footer ul{
+    list-style: none;
+}
+
+.footer-logo {
+    background-color: var(--basic-red);
+    width: 220px;
+    height: 68px;
+    text-align: center;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.fadress, .fphone {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.fadress {
+    margin-bottom: 0px;
+}
+
+.footer-menu ul {
+    font-size: 18px;
+}
+
+.fnav-one a {
+    color: #f1f5f7;
+}
+
+.fnav-two a {
+    color: var(--basic-gold);
+}
+
+.fnav-one a:hover,
+.fnav-two a:hover {text-decoration: underline;}
+
+.fnav-one a:active {color: rgb(241, 245, 247, 0.5);}
+.fnav-two a:active {color: rgba(255, 209, 128, 0.5);}
+
+
+.footer-bottom {
+    background-color: var(--basic-verydarkblue);
+}
+
+.footer-copyright {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer-social {font-size: 16px;}
+.footer-social a {color: #ffffff;}
+.footer-social a:hover {color: #ffffff;}
+.footer-social a:active {color: color: var(--basic-red);}
+
+.footer-contacts{
+    font-size: 16px;
+    line-height: 18px;
+}
+.footer-contacts li {
+    color: #ffffff;
+}
+
+.footer-contacts a {color: var(--basic-gold);}
+.footer-contacts a:hover {color: var(--basic-gold);}
+.footer-contacts a:active {color: var(--basic-red);}
+
+
+
+/* Кнопки купить и закладки */
+.btn-catalog {
+    font-family: "Cuprum", Arial, sans-serif;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.btn-buy {
+    background-color: #63a63e;
+    color: #ffffff;
+    box-shadow: inset 0px -3px 0px #367315;
+}
+
+.btn-buy:hover {background-color: #5fbb2d;}
+.btn-buy:active {background-color: #518534;}
+
+.btn-favorites {
+    background-color: var(--basic-white);
+    color: var(--basic-darkblue);
+    border: 3px solid #63a63e;
+}
+
+.btn-favorites:hover {border: 3px solid var(--basic-darkblue);}
+.btn-favorites:active {opacity: 0.5;}
+
+
+/* Блок авторизации каталога (каталог) */
+
+.block-client {
+    background-color: var(--basic-white);
+    list-style: none;
+}
+
+.block-client a {
+    color: #000000;
+    font-size: 21px;
+}
+
+.my-order, .personal-cabinet {
+    color: var(--basic-verydarkblue);
+    font-size: 16px;
+}
+
+/* Основная страница каталога */
+
+.page-title {
+    font-size: 30px;
+    background-color: #f2f6f8;
+    line-height: 30px;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.breadcrumbs a:hover {color: var(--basic-darkblue);}
+.breadcrumbs a:active {color: var(--basic-verydarkblue);}
+
+/* Фильтр */
+
+.parag-filter {
+    font-size: 13px;
+    line-height: 18px;
+    background-color: #f7f3ec;
+    text-transform: uppercase;
+}
+
+section.filter {
+    width: 220px;
+}
+
+legend {
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.range-field, .manufacturer-field {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 5px;
+}
+
+.button-filter {
+    background-color: var(--basic-white);
+    border: 1px solid #e5e5e5;
+    vertical-align: middle;
+}
+
+/* Список товаров */
+
+.catalog-products {
+    list-style: none;
+}
+
+.item-products {
+    border: 1px solid #eaeaea;
+    width: 220px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.item-products h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.item-products span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.item-products .old-price {
+    font-size: 17px;
+    color: #a9a9a9;
+}
+
+.item-products .price-products {
+    font-size: 17px; 
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    width: 140px;
+}
