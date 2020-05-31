@@ -55,10 +55,6 @@ body {
     padding: 0;
 }
 
-body ul {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
 }
@@ -79,6 +75,10 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.item { 
+    list-style: none;
 }
 
 .popup-order, .popup-map, .add-cart-popup {
@@ -274,13 +274,13 @@ img {
     height: 123px;
 }
 
-.block-information > section > h2 {
+.block-information .title-info {
     font-size: 24px;
     font-weight: bold;
     color: var(--basic-white);
 }
 
-.block-information > section > a { /* Подумать о ссылках с секциями и слайдерами */
+.block-information .page-info { /* Подумать о ссылках с секциями и слайдерами */
     color: var(--basic-white);
     background-color: var(--basic-opacitytext03);
     font-size: 14px;
@@ -308,11 +308,11 @@ img {
     background-color: var(--basic-veryyellowlight);
 }
 
-.block-information > section > a:hover {
+.block-information .page-info:hover {
     background-color: var(--basic-opacitygraylight03);
 }
 
-.block-information > section > a:active {
+.block-information .page-info:active {
     background-color: var(--basic-opacitydarkgray03);
 }
 
@@ -342,7 +342,7 @@ img {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     font-weight: normal;
-    color: var(--basic-darkblue);
+    color: var(--basic-blue);
     line-height: 30px;
     text-transform: uppercase;
 }
@@ -402,7 +402,7 @@ img {
     background-color: var(--basic-background);
 }
 
-.service h2 {
+.title-section {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     font-weight: normal;
@@ -411,7 +411,11 @@ img {
     text-transform: uppercase;
 }
 
-.menu-service button {
+.service .title-info {
+    color: var(--basic-blue);
+}
+
+.menu-service .btn-info {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     font-weight: bold;
@@ -437,21 +441,11 @@ img {
 
 /* Блок с компанией */
 
-.company h2, .company ul {
+.company .delivery-company {
     font-family: "Cuprum", Arial, sans-serif;
-    color: var(--basic-black);
-}
-
-.company h2 {
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 30px;
-    text-transform: uppercase;
-}
-
-.delivery-company {
     font-size: 18px;
     font-weight: normal;
+    color: var(--basic-black);
     line-height: 24px;
 }
 
@@ -526,7 +520,7 @@ img {
     opacity: 0.3;
     font-size: 13px;
     line-height: 18px;
-    border-bottom: 1px dashed var(--basic-buttonred);
+    border-bottom: 1px dotted var(--basic-buttonred);
 }
 
 .result {
@@ -534,7 +528,6 @@ img {
     border: none;
     opacity: 1;
 }
-
 
 .click-sort:hover {
     color: var(--basic-black);
@@ -567,7 +560,7 @@ img {
     line-height: 19px;
 }
 
-fieldset {
+.range-field, .manufacturer-field, .battery {
     border: 0;
 }
 
