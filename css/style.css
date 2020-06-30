@@ -714,6 +714,10 @@ input[type='search']::-webkit-search-results-decoration
     z-index: 1;
 }
 
+.slide > img {
+    vertical-align: middle;
+}
+
 .information-slider:nth-child(1n+1) {
     color: var(--basic-white);
 }
