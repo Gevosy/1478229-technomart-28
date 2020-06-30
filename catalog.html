@@ -70,7 +70,6 @@
                 </span>
                 <ul class="item user-menu">
                   <li class="item-menu"><a class="my-order" href="#">Мои заказы</a></li>
-                  <li class="item-menu"><span class="order-point"></span></li>
                   <li class="item-menu"><a class="personal-account" href="#">Личный кабинет</a></li>
                 </ul>
               </div>
@@ -95,7 +94,7 @@
         <div class="container">
             <!-- Хлебные крошки -->
             <ul class="item breadcrumbs">
-                <li class="item item-breadcrumbs"><a href="index.html"><span class="visually-hiden">Главная</span><span class="icon-home"></span></a></li>
+                <li class="item item-breadcrumbs"><a href="index.html" class="icon-home-link"></a></li>
                 <li class="item item-breadcrumbs"><a href="#">Каталог</a></li>
                 <li class="item item-breadcrumbs"><a href="#">Инструмент</a></li>
                 <li class="item item-breadcrumbs"><a href="#">Перфораторы</a></li>
@@ -114,8 +113,8 @@
                                 <div class="scale">
                                   <div class="bar"></div>
                                 </div>
-                                <div class="toggle toggle-min" tabindex="0"></div>
-                                <div class="toggle toggle-max" tabindex="0"></div>
+                                <button class="toggle toggle-min" tabindex="0"></button>
+                                <button class="toggle toggle-max" tabindex="0"></button>
                               </div>
                               <div class="price-controls">
                                 <label class="min-price"> 
@@ -147,12 +146,12 @@
                                 </li>
 
                                 <li class="item-check">
-                                  <input type="checkbox" id="dewalt" name="dewalt" class="check-filter-input visually-hiden">
+                                  <input type="checkbox" id="dewalt" name="dewalt" class="check-filter-input visually-hiden" disabled>
                                   <label for="dewalt">Dewalt</label>
                                 </li>
 
                                 <li class="item-check">
-                                  <input type="checkbox" id="hitachi" name="hitachi" class="check-filter-input visually-hiden">
+                                  <input type="checkbox" id="hitachi" name="hitachi" class="check-filter-input visually-hiden" checked disabled>
                                   <label for="hitachi">Hitachi</label>
                                 </li>
                             </ul>
