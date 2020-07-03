@@ -41,7 +41,7 @@ form.addEventListener("submit", function (evt) {
     if (isStorageSupport) 
     
     {
-      localStorage.setItem("text", popupWriteUs.value);
+      localStorage.setItem("nameUser", popupWriteUs.value);
     }
   }
 });
