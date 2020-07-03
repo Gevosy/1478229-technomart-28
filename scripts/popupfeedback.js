@@ -1,6 +1,6 @@
 var buttonWriteUs = document.querySelector(".btn-write"); 
 var popupWriteUs = document.querySelector(".popup-write-us");
-var forma = popupWriteUs.querySelector(".form-write-us");
+var form = popupWriteUs.querySelector("form");
 var closePopup = popupWriteUs.querySelector(".modal-close");
 var nameUser = popupWriteUs.querySelector("input[type=text]")
 var emailUser= popupWriteUs.querySelector("input[type=email]")
@@ -29,16 +29,21 @@ buttonWriteUs.addEventListener("click", function (evt) {
     }
 });
 
-forma.addEventListener("submit", function (evt) {
+form.addEventListener("submit", function (evt) {
   if (!nameUser.value || !emailUser.value) {
     evt.preventDefault();
     popupWriteUs.classList.remove("modal-error");
     popupWriteUs.offsetWidth = popupWriteUs.offsetWidth;
     popupWriteUs.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
+  } 
+  
+  else {
+    if (isStorageSupport) 
+    
+    {
       localStorage.setItem("text", popupWriteUs.value);
     }
+  }
 });
 
 closePopup.addEventListener("click", function(evt) {
