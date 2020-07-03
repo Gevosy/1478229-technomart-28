@@ -77,7 +77,7 @@
             <!-- Навигационное меню -->
             <nav class="main-menu">
                 <ul class="item site-navigation">
-                    <li class="item-navigation"><a href="index.html">Главная</a></li>
+                    <li class="item-navigation"><span class="visually-hiden">Главная страницы</span><a href="index.html">Главная</a></li>
                     <li class="item-navigation"><a href="#">Компания</a></li>
                     <li class="item-navigation"><a href="#">Каталог</a></li>
                     <li class="item-navigation"><a href="#">Новости</a></li>
@@ -355,6 +355,21 @@
                               <button class="btn-catalog btn-favorites" type="button">В закладки</button>
                             </div>
                           </li>
+
+                          <li class="item-products new">
+                            <div class="images-products">
+                              <img src="img/bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000" title="Производитель Bosch - модель перфоратора BFG 2000">
+                            </div>
+                            <a href="#"> <h3 class="title-products"><span class="name-products">Перфоратор BOSCH</span><span class="model-products">BFG 2000</span></h3></a>
+                            <div class="info-price">
+                              <span class="visually-hiden">Новая цена</span>
+                              <span class="price-products">12500 Р.</span>
+                            </div>
+                            <div class="btn-buy-section">
+                              <a href="#" class="btn-catalog btn-buy">Купить</a>
+                              <button class="btn-catalog btn-favorites" type="button">В закладки</button>
+                            </div>
+                          </li>
                     </ul> 
 
                     <div class="section-pagination">
@@ -438,16 +453,18 @@
           </div>
         </div>
       </footer>
-
-    <!-- Добавлен товар (модальное окно) -->
     <div class="popup add-cart-popup">
-        <span class="visually-hiden">Открылось модальное окно при добавления товара</span> 
+      <div class="line-decoration-popup"></div>
+      <button type="button" class="modal-close" aria-label="Кнопка - закрыть модальное окно"></button>
+      <span class="visually-hiden">Открылось модальное окно при добавления товара</span>
+      <div class="cart-information">
         <p class="add-cart-text">Товар добавлен в корзину</p>
-        <div class="bottom-block">
-            <a class="hyper-place" href="#">Оформить заказ</a>
-            <button class="btn-back" type="button">Продолжить покупки</button>
-            <button type="button" aria-label="Закрыть модальное окно"></button> <!-- Тут будет иконка закрывающее Х -->
-        </div>
+      </div>
+      <div class="bottom-block-cart">
+          <a class="hyper-place btn-main-page" href="index.html">Оформить заказ</a>
+          <button class="btn-back btn-main-page" type="button">Продолжить покупки</button>
+      </div>
     </div>
+    <script src="js/addcart.js"></script>
   </body>
 </html>

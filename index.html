@@ -9,7 +9,6 @@
   </head>
   <body class="page">
     <header class="main-header">
-    <!--Верхнее меню-->
       <div class="top-menu">
         <div class="container">
           <a class="logo" href="index.html">
@@ -44,7 +43,6 @@
           </div>
         </div>
       </div>
-    <!-- Информация (слоган, телефон, адрес и вход/рег)-->
       <div class="header-information">
           <div class="container">
             <div class="content-header">
@@ -53,7 +51,6 @@
                   <a class="main-phone" href="tel:+78125550555" aria-label="Номер телефона. +78125550555">+7 (812) 555-05-55</a>
                   <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               </div>
-      <!--Блок авторизации клиента-->
               <div class="auth">
                 <a class="sign-up" href="#">
                   <svg width="20" height="17" viewBox="0 0 20 17" fill="none">
@@ -65,7 +62,6 @@
                 <a class="reg" href="#">Регистрация</a>
               </div>
             </div>
-      <!-- Навигационное меню -->
           <nav class="main-menu">
             <ul class="item site-navigation">
               <li><a>Главная</a></li>
@@ -82,7 +78,6 @@
     </header>
 
     <main>
-      <!-- Слайдер и секции предложений -->
       <div class="promo-information">
         <div class="container">
           <section class="box-material new">
@@ -146,7 +141,6 @@
         </div>
       </div>
 
-      <!-- Каталог популярных товаров -->
       <section class="popular-product">
         <div class="container">
           <div class="block block-popular">
@@ -290,9 +284,9 @@
           <p class="paragraf-service">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="information-service">
           <div class="menu-service">
-            <button class="btn-info current" type="button">Доставка</button>
-            <button class="btn-info" type="button">Гарантия</button>
-            <button class="btn-info" type="button">Кредит</button>
+            <button class="btn-info btn-delivery current" type="button">Доставка</button>
+            <button class="btn-info btn-guarante" type="button">Гарантия</button>
+            <button class="btn-info btn-credit" type="button">Кредит</button>
           </div>
           <div class="info-nav info-delivery info-current">
             <h2 class="title-info title-section">Доставка</h2>
@@ -330,7 +324,7 @@
             <h2 class="title-section">Контакты</h2>
             <p>Вы можете забрать товар сами, <br>заехав в наш офис:</p>
             <a href="#">
-              <img src="img/map.png" width="300" height="158" alt="Карта проезда: Большая Конюшенная ул., 19">
+              <img class="modal-map" src="img/map.png" width="300" height="158" alt="Карта проезда: Большая Конюшенная ул., 19">
             </a>
             <a class="btn-main-page btn-write btn-all-company" href="#">Забудились? Напишите нам!</a>
           </section>
@@ -344,7 +338,6 @@
             <a class="footer-logo" href="index.html">
               <img src="img/logo-technomart.svg" width="138" height="23" alt="Компания «Техномарт»">
             </a>
-            <!-- Информация в подвале -->
             <div class="footer-info">
               <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <a class="footer-phone" href="tel:+78125550555" aria-label="Номер телефона +78125550555">+7 (812) 555-05-55</a>
@@ -397,33 +390,52 @@
         </div>
       </div>
     </footer>
-    <!-- Модальное окно -->
-    <div class="popup popup-order">
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <ul class="input-form">
-          <li class="input-items">
-            <label for="name-surname">Ваше имя:</label>
-            <input type="text" id="name-surname" name="name-surname" placeholder="Имя фамилия" required>
-          </li>
-          <li class="input-items">
-            <label for="order-email">Ваш e-mail:</label>
-            <input type="email" id="order-email" name="order-email" placeholder="email@example.com" required>
-          </li>
-        </ul>
-        <label for="text-form">Текст письма:</label>
-        <textarea id="text-form" name="text-form" rows="7" cols="60" placeholder="В свободной форме"></textarea>
-        <div class="bottom-block-btn">
-          <button class="btn-popup" type="submit">Оформить заказ</button>
-        </div>
-      </form>
-      <!-- Модальное окно карты -->
-      <form action="https://echo.htmlacademy.ru" method="POST"></form>
-        <div class="popup popup-map">
-          <span class="visually-hidden">Открылось модальное окно с большой картой проезда</span>
-          <button type="button" aria-label="Закрыть схему проезда"></button> <!-- Пока так оставлю, вместо простой кнопки - иконка x -->
-          <img src="img/popup-map.png" width="943" height="449" alt="Карта проезда: Большая Конюшенная ул., 19">
-        </div>
+    <div class="popup popup-write-us">
+      <div class="line-decoration-popup"></div>
+      <button type="button" class="modal-close" aria-label="Кнопка - закрыть модальное окно"></button>
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="wrapper-write-us">
+          <ul class="item input-form">
+            <li class="input-items">
+              <label for="name-surname">Ваше имя:</label>
+              <input type="text" class="form-write-us" id="name-surname" name="name-surname" placeholder="Имя фамилия" required>
+            </li>
+            <li class="input-items">
+              <label for="order-email">Ваш e-mail:</label>
+              <input type="email" class="form-write-us" id="order-email" name="order-email" placeholder="email@example.com" required>
+            </li>
+          </ul>
+          <label for="text-form">Текст письма:</label>
+          <textarea id="text-form" class="form-write-us" name="text-form" rows="7" cols="40" placeholder="В свободной форме"></textarea>
+      </div>
+      <div class="block-button-close">
+        <button class="btn-popup-write btn-main-page" type="submit">Отправить</button>
+      </div>
       </form>
     </div>
+    <div class="popup popup-map">
+      <div class="line-decoration-popup"></div>
+      <span class="visually-hiden">Открылось модальное окно с большой картой проезда</span>
+      <button type="button" class="modal-close" aria-label="Кнопка - закрыть модальное окно"></button>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCQA6AH22D" width="943" height="449" allowfullscreen></iframe>
+      <p>
+        <img src="img/popup-map.png" width="943" height="449" alt="Карта проезда: Большая Конюшенная ул., 19">
+      </p>
+    </div>
+    <div class="popup add-cart-popup">
+      <div class="line-decoration-popup"></div>
+      <button type="button" class="modal-close" aria-label="Кнопка - закрыть модальное окно"></button>
+      <span class="visually-hiden">Открылось модальное окно при добавления товара</span>
+      <div class="cart-information">
+        <p class="add-cart-text">Товар добавлен в корзину</p>
+      </div>
+      <div class="bottom-block-cart">
+          <a class="hyper-place btn-main-page" href="index.html">Оформить заказ</a>
+          <button class="btn-back btn-main-page" type="button">Продолжить покупки</button>
+      </div>
+    </div>
+    <script src="js/popupfeedback.js"></script>
+    <script src="js/popupmap.js"></script>
+    <script src="js/addcart.js"></script>
   </body>
 </html>
