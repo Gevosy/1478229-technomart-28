@@ -53,13 +53,14 @@
               </div>
               <div class="auth">
                 <a class="sign-up" href="#">
-                  <svg width="20" height="17" viewBox="0 0 20 17" fill="none">
+                  <svg class="icon-sign-up" width="20" height="17" viewBox="0 0 20 17" fill="none">
                     <path class="icon-login-path" d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z"/>
                     <path class="icon-login-path" d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
                   </svg>
                   <span>Войти</span>
                 </a>
                 <a class="reg" href="#">Регистрация</a>
+
               </div>
             </div>
           <nav class="main-menu">
@@ -310,8 +311,8 @@
         <div class="container">
           <section class="about-company">
             <h2 class="title-section">Компания «Техномарт»</h2>
-            <p class="text-section">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-            <p class="text-section">Мы можем доставить ваш товар самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+            <p class="text-section">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p class="text-section">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
             <ul class="item delivery-company">
               <li class="item-company item-line">Деловые линии</li>
               <li class="item-company item-line">Автотрейдинг</li>
@@ -322,11 +323,11 @@
 
           <section class="contacts-company">
             <h2 class="title-section">Контакты</h2>
-            <p>Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+            <p class="text-section">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
             <a href="#">
               <img class="modal-map" src="img/map.png" width="300" height="158" alt="Карта проезда: Большая Конюшенная ул., 19">
             </a>
-            <a class="btn-main-page btn-write btn-all-company" href="#">Забудились? Напишите нам!</a>
+            <a class="btn-main-page btn-write btn-all-company" href="#">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -398,15 +399,15 @@
           <ul class="item input-form">
             <li class="input-items">
               <label for="name-surname">Ваше имя:</label>
-              <input type="text" class="form-write-us" id="name-surname" name="name-surname" placeholder="Имя фамилия" required>
+              <input type="text" class="form-write-us" id="name-surname" name="name-surname" placeholder="Имя фамилия">
             </li>
             <li class="input-items">
               <label for="order-email">Ваш e-mail:</label>
-              <input type="email" class="form-write-us" id="order-email" name="order-email" placeholder="email@example.com" required>
+              <input type="email" class="form-write-us" id="order-email" name="order-email" placeholder="email@example.com">
             </li>
           </ul>
           <label for="text-form">Текст письма:</label>
-          <textarea id="text-form" class="form-write-us" name="text-form" rows="7" cols="40" placeholder="В свободной форме"></textarea>
+          <textarea id="text-form" class="form-write-us comments" name="text-form" rows="3" cols="40" placeholder="В свободной форме"></textarea>
       </div>
       <div class="block-button-close">
         <button class="btn-popup-write btn-main-page" type="submit">Отправить</button>
@@ -417,7 +418,6 @@
       <div class="line-decoration-popup"></div>
       <span class="visually-hiden">Открылось модальное окно с большой картой проезда</span>
       <button type="button" class="modal-close" aria-label="Кнопка - закрыть модальное окно"></button>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCQA6AH22D" width="943" height="449" allowfullscreen></iframe>
       <p>
         <img src="img/popup-map.png" width="943" height="449" alt="Карта проезда: Большая Конюшенная ул., 19">
       </p>
@@ -427,7 +427,7 @@
       <button type="button" class="modal-close" aria-label="Кнопка - закрыть модальное окно"></button>
       <span class="visually-hiden">Открылось модальное окно при добавления товара</span>
       <div class="cart-information">
-        <p class="add-cart-text">Товар добавлен в корзину</p>
+        <p class="add-cart-text">Товар добавлен в корзину!</p>
       </div>
       <div class="bottom-block-cart">
           <a class="hyper-place btn-main-page" href="index.html">Оформить заказ</a>
