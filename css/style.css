@@ -623,17 +623,17 @@ input[type='search']::-webkit-search-results-decoration
 .main-menu a {
     color: var(--basic-white);
     font-size: 18px;
-    padding-left: 27px;
-    padding-right: 24px;
+    padding-left: 28px;
+    padding-right: 29px;
 }
 
 .site-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
     min-height: 60px;
     padding-left: 26px;
-    padding-right: 23px;
+    padding-right: 19px;
     margin: 0;
 }
 
@@ -1415,6 +1415,7 @@ input[type='search']::-webkit-search-results-decoration
 
 .parameters {
     display: flex;
+    flex-wrap: wrap;
     margin-right: 46px;
 }
 
@@ -1968,6 +1969,14 @@ input::-webkit-inner-spin-button {
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
+.footer-logo:hover {
+    background-color: var(--basic-buttonred);
+}
+
+.footer-logo:active {
+    background-color: var(--basic-error);
+}
+
 .footer-info {
     width: 326px;
     margin-top: 22px;
@@ -1996,13 +2005,22 @@ input::-webkit-inner-spin-button {
 
 .footer-menu > ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
+    width: 565px;
+}
+
+.footer-menu-one > li:not(:last-child) {
+    margin-right: 58px;
 }
 
 .footer-menu .footer-menu-two {
     padding-top: 34px;
     padding-left: 22px;
+}
+
+.footer-menu-two > li:not(:last-child) {
+    margin-right: 59px;
 }
 
 .footer-menu .footer-menu-one a {
@@ -2044,13 +2062,17 @@ input::-webkit-inner-spin-button {
     
 }
 
+.item-social {
+    margin-right: 5px;
+}
+
 .footer-social {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 41px;
-    margin-top: -2px;
+    width: 300px;
+    margin-left: 48px;
 }
 
 .footer-social a {
@@ -2065,8 +2087,8 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     fill: var(--basic-white);
 }
